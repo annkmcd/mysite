@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Contact Info</title>
+</head>
+
+<body>
+  <hr size="3">
+  <p>Ann McDowell <br>BlobFish Activity Hub <br> P.O. Box 1629 <br>Pittsboro, NC 27312</p>
+  <hr size="3">
+  <p>ann@wackado.com</p>
+  <hr>
+  <form action="mailto:info@goblobfish.com" method="post" enctype="text/plain">
+    <!--the form defaults to action="index.html" so that when users click submit, they're returned to the home Page
+      changing the action to "mailto:info@goblobfish.com" opens the users mail client to send an Email
+
+    delete the default attribute "class" and add "enctype"="text/plain" -->
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Message:</label>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea><br><br><br>
+    <input type="submit" name="" value="Submit">
+  </form>
+</body>
+
+</html>
